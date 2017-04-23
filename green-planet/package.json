@@ -1,0 +1,17 @@
+{
+  "name": "green-planet",
+  "version": "0.9.9",
+  "description": "javascript logging example",
+  "main": "index.js",
+  "repository": "https://github.com/wgx731/bucky-logging/green-planet",
+  "author": "Wang Eric GaoXiang <wgx731@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "uuid": "^3.0.1",
+    "winston": "^2.3.1"
+  }
+}
