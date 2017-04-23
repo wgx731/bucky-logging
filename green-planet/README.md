@@ -7,5 +7,6 @@ Green Planet - Javascript
 
 ## Usage
 
+- `mkdir -p logs`
 - `yarn`
 - `yarn start`
