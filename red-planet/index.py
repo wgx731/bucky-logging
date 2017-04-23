@@ -4,7 +4,7 @@ from flask import Flask
 
 
 LOG_FORMAT = '[%(asctime)s %(pathname)s:%(lineno)d] %(levelname)s - %(message)s'
-LOG_FILE = 'app.log'
+LOG_FILE = 'logs/app.log'
 HOST = '0.0.0.0'
 PORT = 8080
 
