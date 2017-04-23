@@ -1,20 +1,27 @@
 const PORT = 3000;
+const LOG_FILE = 'app.log';
 
 const express = require('express');
 const winston = require('winston');
 const uuid = require('uuid');
 
 let app = express();
+let logger = new (winston.Logger)({
+  transports: [
+    new (winston.transports.Console)(),
+    new (winston.transports.File)({ filename: LOG_FILE })
+  ]
+});
 
 app.get('/green', function(req, res) {
-  winston.log('info', uuid.v1(), {
+  logger.log('info', 'id: ' + uuid.v1(), {
       path: '/green'
   });
   res.send('blinky-robot');
 });
 
 app.get('/error', function(req, res) {
-  winston.log('error', uuid.v1(), {
+  logger.log('error', 'id: ' + uuid.v1(), {
     path: '/error'
   });
   res.status = 500;
