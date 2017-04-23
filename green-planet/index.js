@@ -1,5 +1,5 @@
 const PORT = 3000;
-const LOG_FILE = 'app.log';
+const LOG_FILE = 'logs/app.log';
 
 const express = require('express');
 const winston = require('winston');
@@ -24,7 +24,7 @@ app.get('/error', function(req, res) {
   logger.log('error', 'id: ' + uuid.v1(), {
     path: '/error'
   });
-  res.status = 500;
+  res.status(500);
   res.send('error');
 });
 
