@@ -1,6 +1,7 @@
 import logging, uuid
 from logging.handlers import RotatingFileHandler
 from flask import Flask
+from flask_api import status
 
 
 LOG_FORMAT = '[%(asctime)s %(pathname)s:%(lineno)d] %(levelname)s - %(message)s'
@@ -22,7 +23,7 @@ def error():
     app.logger.error('id: %s, %s' %(uuid.uuid1(), {
         'path': '/error'
     }))
-    return 'error'
+    return 'error', status.HTTP_500_INTERNAL_SERVER_ERROR
 
 if __name__ == "__main__":
     print('server run at %d' % PORT)
