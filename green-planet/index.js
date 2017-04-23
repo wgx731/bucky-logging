@@ -10,13 +10,14 @@ app.get('/green', function(req, res) {
   winston.log('info', uuid.v1(), {
       path: '/green'
   });
-  res.send('blinky - robot');
+  res.send('blinky-robot');
 });
 
 app.get('/error', function(req, res) {
   winston.log('error', uuid.v1(), {
     path: '/error'
   });
+  res.status = 500;
   res.send('error');
 });
 
