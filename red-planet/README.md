@@ -7,8 +7,8 @@ Red Planet - Python
 
 ## Usage
 
+- `mkdir -p logs`
 - `virtualenv -p python3 env`
 - `source env/bin/activate`
 - `pip install -r requirements.txt`
-- `mkdir -p logs`
 - `python index.py`
