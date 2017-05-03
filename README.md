@@ -13,10 +13,11 @@ Bucky O'Hare API Logging
 
 ## Thanks
 
-**bucky-logging** © 2017+, Wang Eric GaoXiang. Released under the [MIT](https://github.com/wgx731/bucky-logging/blob/master/LICENSE) License.
+**bucky-logging** © 2017+, [@wgx731]. Released under the [MIT](https://github.com/wgx731/bucky-logging/blob/master/LICENSE) License.
 
-Authored and maintained by Wang Eric GaoXiang with help from contributors ([list][contributors]).
+Authored and maintained by [@wgx731] with help from contributors ([list][contributors]).
 
-> GitHub [@wgx731](https://github.com/wgx731)
+> GitHub [@wgx731]
 
-[contributors]: https://github.com/wgx731/bucky-logging/pulls/contributors
+[@wgx731]: https://github.com/wgx731
+[contributors]: https://github.com/wgx731/bucky-logging/contributors
